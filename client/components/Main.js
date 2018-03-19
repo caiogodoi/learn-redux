@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import PhotoGrid from './PhotoGrid';
 
 const Main = () => {
   return (
@@ -7,7 +8,7 @@ const Main = () => {
       <h1>
         <Link to="/">Reduxstagram</Link>
       </h1>
-      {React.cloneElement(this.props.children, this.props)}
+      <PhotoGrid />
     </div>
   );
 };
